@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  UIAnimationTest
+//
+//  Created by zmz on 2017/8/22.
+//  Copyright © 2017年 zmz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PublicDefine.h"
+#import "UIColor+HEX.h"
+#import "NSTimer+block.h"
+#import "UIButton+block.h"
+#import "UIImage+category.h"
+
+#endif /* PrefixHeader_pch */
