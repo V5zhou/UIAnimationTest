@@ -24,6 +24,7 @@
 		FC824A5D1F629EBD00FCEE79 /* ReplicatorLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC824A5C1F629EBD00FCEE79 /* ReplicatorLayerViewController.m */; };
 		FC824A971F67782100FCEE79 /* ScrollLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC824A961F67782100FCEE79 /* ScrollLayerViewController.m */; };
 		FC824A9A1F677AAC00FCEE79 /* large_leaves_70mp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC824A991F677AAC00FCEE79 /* large_leaves_70mp.jpg */; };
+		FCB88E9E20C6633700495756 /* PropertyAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB88E9D20C6633700495756 /* PropertyAnimateViewController.m */; };
 		FCD6F2191F4BD2CE002E77DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F2181F4BD2CE002E77DF /* main.m */; };
 		FCD6F21C1F4BD2CE002E77DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F21B1F4BD2CE002E77DF /* AppDelegate.m */; };
 		FCD6F21F1F4BD2CE002E77DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F21E1F4BD2CE002E77DF /* ViewController.m */; };
@@ -79,6 +80,8 @@
 		FC824A951F67782100FCEE79 /* ScrollLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLayerViewController.h; sourceTree = "<group>"; };
 		FC824A961F67782100FCEE79 /* ScrollLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLayerViewController.m; sourceTree = "<group>"; };
 		FC824A991F677AAC00FCEE79 /* large_leaves_70mp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = large_leaves_70mp.jpg; sourceTree = "<group>"; };
+		FCB88E9C20C6633700495756 /* PropertyAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyAnimateViewController.h; sourceTree = "<group>"; };
+		FCB88E9D20C6633700495756 /* PropertyAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyAnimateViewController.m; sourceTree = "<group>"; };
 		FCD6F2141F4BD2CE002E77DF /* UIAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6F2181F4BD2CE002E77DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCD6F21A1F4BD2CE002E77DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,15 @@
 			name = "图层";
 			sourceTree = "<group>";
 		};
+		FCB88E9B20C6631600495756 /* Property动画 */ = {
+			isa = PBXGroup;
+			children = (
+				FCB88E9C20C6633700495756 /* PropertyAnimateViewController.h */,
+				FCB88E9D20C6633700495756 /* PropertyAnimateViewController.m */,
+			);
+			name = "Property动画";
+			sourceTree = "<group>";
+		};
 		FCD6F20B1F4BD2CE002E77DF = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +228,7 @@
 				FC5E90FE1F4E721900E1432B /* 手动与缓冲 */,
 				FCD6F2691F4C3083002E77DF /* 显式动画 */,
 				FCD6F25E1F4C05B2002E77DF /* 隐式动画 */,
+				FCB88E9B20C6631600495756 /* Property动画 */,
 				FCD6F2681F4C3076002E77DF /* Categorys */,
 				FCD6F2201F4BD2CE002E77DF /* Main.storyboard */,
 				FC824A421F6142CD00FCEE79 /* Digits.png */,
@@ -392,6 +405,7 @@
 				FC5E90FD1F4E71F600E1432B /* MediaTimingViewController.m in Sources */,
 				FCDF47D61F693FA3002973DB /* AVPlayerLayerViewController.m in Sources */,
 				FCD6F2191F4BD2CE002E77DF /* main.m in Sources */,
+				FCB88E9E20C6633700495756 /* PropertyAnimateViewController.m in Sources */,
 				FC824A561F6298F300FCEE79 /* TransformLayerViewController.m in Sources */,
 				FCD6F2721F4D151C002E77DF /* UIButton+block.m in Sources */,
 			);

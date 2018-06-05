@@ -39,6 +39,8 @@ typedef NS_ENUM(NSUInteger, PushFunction) {
     PushFunction_MediaTiming,           ///< 缓冲
     
     PushFunction_Magnificate,           ///< 拉伸过滤
+    
+    PushFunction_Property,              ///< property动画
 };
 
 @implementation ViewController
@@ -74,7 +76,8 @@ typedef NS_ENUM(NSUInteger, PushFunction) {
                            ],
                        @[
                            @(PushFunction_Magnificate),
-                           ]
+                           @(PushFunction_Property),
+                           ],
                        ];
     [self.tableView reloadData];
 }
@@ -139,6 +142,9 @@ typedef NS_ENUM(NSUInteger, PushFunction) {
             break;
         case PushFunction_Magnificate:
             return @"拉伸过滤";
+            break;
+        case PushFunction_Property:
+            return @"property动画";
             break;
             
         default:
@@ -207,6 +213,9 @@ typedef NS_ENUM(NSUInteger, PushFunction) {
             break;
         case PushFunction_Magnificate:          //拉伸过滤
             cls = NSClassFromString(@"MagnificateViewController");
+            break;
+        case PushFunction_Property:             //property
+            cls = NSClassFromString(@"PropertyAnimateViewController");
             break;
             
         default:
