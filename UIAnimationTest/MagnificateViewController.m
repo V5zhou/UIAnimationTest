@@ -43,6 +43,11 @@
     [self trigger];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_timer invalidate];
+}
+
 - (void)trigger {
     NSUInteger units = NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     NSDateComponents *components = [self.calendar components:units fromDate:[NSDate date]];
@@ -69,10 +74,6 @@
         _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     }
     return _calendar;
-}
-
-- (void)dealloc {
-    [_timer invalidate];
 }
 
 @end

@@ -39,7 +39,7 @@
     
     //颜色
     CABasicAnimation *animate_color = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
-    animate_color.toValue = (__bridge id _Nullable)(RGBHEX_(#ff0028).CGColor);
+    animate_color.toValue = (__bridge id _Nullable)([UIColor blackColor].CGColor);
     //位置
     CAKeyframeAnimation *animate_frame = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     animate_frame.path = keyPath.CGPath;

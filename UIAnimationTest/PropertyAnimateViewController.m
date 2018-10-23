@@ -82,6 +82,7 @@ static UIViewPropertyAnimator *weak_animate4 = nil;
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
+    [weak_animate4 stopAnimation:YES];
     weak_animate4 = nil;
 }
 
